@@ -89,6 +89,105 @@
 </head>
 <body>
     <div class="card">
+        <h2 class="section-header">Virtual Desktop Infrastructure (VDI) Analysis - Single Instance Approach</h2>
+
+<div class="calculation-note">
+    <h3>Single Instance Strategy:</h3>
+    <ul>
+        <li><strong>Instance Type:</strong> DS13-2 v2
+            <div class="tier-detail">- 2 vCPUs</div>
+            <div class="tier-detail">- 56 GB RAM</div>
+            <div class="tier-detail">- 112 GB Temporary storage</div>
+        </li>
+        <li><strong>Time Slot Division:</strong>
+            <div class="tier-detail">- Morning Shift: 9 AM - 2 PM</div>
+            <div class="tier-detail">- Evening Shift: 2 PM - 7 PM</div>
+            <div class="tier-detail">- Night Shift: 7 PM - 12 AM (optional)</div>
+        </li>
+    </ul>
+</div>
+
+<table>
+    <tr>
+        <th>Scale</th>
+        <th>Instance Count</th>
+        <th>Monthly VDI Cost (USD)</th>
+        <th>Monthly VDI Cost (INR)</th>
+        <th>Per User Cost</th>
+    </tr>
+    <tr>
+        <td>1,000 Users</td>
+        <td>1 × DS13-2 v2</td>
+        <td>$276.67</td>
+        <td>₹22,964</td>
+        <td>₹22.96</td>
+    </tr>
+    <tr>
+        <td>5,000 Users</td>
+        <td>1 × DS13-2 v2</td>
+        <td>$276.67</td>
+        <td>₹22,964</td>
+        <td>₹4.59</td>
+    </tr>
+    <tr>
+        <td>10,000 Users</td>
+        <td>1 × DS13-2 v2</td>
+        <td>$276.67</td>
+        <td>₹22,964</td>
+        <td>₹2.30</td>
+    </tr>
+</table>
+
+<div class="calculation-note">
+    <h3>Time Slot Management:</h3>
+    <ul>
+        <li><strong>1000 Users Distribution:</strong>
+            <div class="tier-detail">- Morning: 400 users (40%)</div>
+            <div class="tier-detail">- Evening: 400 users (40%)</div>
+            <div class="tier-detail">- Night: 200 users (20%)</div>
+        </li>
+        <li><strong>Access Schedule:</strong>
+            <div class="tier-detail">- Each user gets 5 hours of dedicated access</div>
+            <div class="tier-detail">- Pre-booked time slots to avoid conflicts</div>
+            <div class="tier-detail">- Emergency access queue for urgent needs</div>
+        </li>
+    </ul>
+</div>
+
+<div class="aws-note">
+    <h3>Cost Breakdown Per Instance:</h3>
+    <ul>
+        <li>Base Instance: $276.67/month
+            <div class="tier-detail">- Mumbai region pricing</div>
+            <div class="tier-detail">- Reserved instance (1-year term)</div>
+        </li>
+        <li>Storage: $18.58/month
+            <div class="tier-detail">- 2 × Standard SSD (E10)</div>
+            <div class="tier-detail">- OS + User profiles</div>
+        </li>
+        <li>Total Monthly: $295.25 (₹24,506)</li>
+    </ul>
+</div>
+
+<div class="service-note">
+    <h3>Performance Considerations:</h3>
+    <li><strong>Resource Allocation:</strong>
+        <ul>
+            <li>2 vCPUs shared among active users</li>
+            <li>56 GB RAM distributed per session</li>
+            <li>Suitable for:
+                <ul>
+                    <li>Basic office applications</li>
+                    <li>Web browsing</li>
+                    <li>Light development work</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</div>
+
+
+
         <h2 class="section-header">1. Detailed EC2 Pricing Analysis</h2>
         
         <h3>1.1 Regional EC2 Hourly Rates</h3>
@@ -743,8 +842,8 @@ Cluster Selection Criteria:
         </div>
 
         <div class="calculation-note">
-            <h3>Total Infrastructure Costs with Regional Pricing (Mumbai)</h3>
-            <div class="service-note">Monthly costs based on 60% active user ratio</div>
+            <h3>Total Infrastructure Costs with Regional Pricing (Mumbai) </h3>
+            <div class="service-note">Monthly costs based on 60% active user ratio and optimized single-instance VDI with time-sharing</div>
             <table>
                 <tr>
                     <th>Component</th>
@@ -783,6 +882,12 @@ Cluster Selection Criteria:
                     <td>₹41,500</td>
                 </tr>
                 <tr>
+                    <td>VDI (Single DS13-2 v2)</td>
+                    <td>₹24,506</td>
+                    <td>₹24,506</td>
+                    <td>₹24,506</td>
+                </tr>
+                <tr>
                     <td><strong>Total Monthly Fixed Costs</strong></td>
                     <td class="cost-emphasis">₹45,008</td>
                     <td class="cost-emphasis">₹157,121</td>
@@ -794,9 +899,15 @@ Cluster Selection Criteria:
                     <td class="cost-emphasis">₹52.37</td>
                     <td class="cost-emphasis">₹44.60</td>
                 </tr>
+                <tr>
+                    <td><strong>VDI Cost per User</strong></td>
+                    <td class="cost-emphasis">₹22.96</td>
+                    <td class="cost-emphasis">₹4.59</td>
+                    <td class="cost-emphasis">₹2.30</td>
+                </tr>
             </table>
         </div>
-
+        
         <div class="calculation-note">
             <h3>Variable Costs per Transaction</h3>
             <table>
