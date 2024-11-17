@@ -306,53 +306,130 @@ Cluster Selection Criteria:
         </div>
 
         <h2 class="section-header">2.2 Database</h2>
-            <div class="service-note">
-
-                <h4>Database Services:</h4>
-    <li><strong>MongoDB Atlas:</strong> Primary database for storing user data, application content, and operational data.
-        <ul>
-            <li>M40: Suitable for 1000 users with ~50 documents per user</li>
-            <li>M50: Optimized for 5000 users with increased IOPS and storage</li>
-            <li>M60: Designed for 10000 users with maximum performance</li>
-        </ul>
-    </li>
-                  
-            </div>
-            <table>
-                  <tr>
-                        <th>Service</th>
-                        <th>Usage Type</th>
-                        <th>Storage</th>
-                        <th>RAM</th>
-                        <th>vCPUs</th>
-                        <th>Price</th>
-                  </tr>
-                  <tr>
-                        <td>MongoDB Atlas M0 </td>
-                        <td>Primary DB</td>
-                        <td>512mb</td>
-                        <td>Shared</td>
-                        <td>Shared</td>
-                        <td>Free</td>
-                  </tr>
-                  <tr>
-                        <td>MongoDB Atlas (M10-M700)</td>
-                        <td>Primary DB</td>
-                        <td>10gb-4000gb</td>
-                        <td>2gb-768gb</td>
-                        <td>2-96</td>
-                        <td>$0.08/hr-33.26/hr</td>
-                  </tr>
-                  <tr>
-                        <td>MongoDB Atlas (M10-M700)</td>
-                        <td>Primary DB</td>
-                        <td>upto 1Tb</td>
-                        <td>Auto-Scale</td>
-                        <td>Auto-Scale</td>
-                        <td>$0.1 -/1M reads</td>
-                  </tr>
-                  
-            </table>
+    <div class="service-note">
+        <h4>Database Services:</h4>
+        <li><strong>MongoDB Atlas:</strong> Primary database for storing user data, application content, and operational data.
+            <ul>
+                <li>M40: Suitable for 1000 users with ~50 documents per user</li>
+                <li>M50: Optimized for 5000 users with increased IOPS and storage</li>
+                <li>M60: Designed for 10000 users with maximum performance</li>
+            </ul>
+        </li>
+    </div>
+    <table>
+        <tr>
+            <th>Service</th>
+            <th>Usage Type</th>
+            <th>Storage</th>
+            <th>RAM</th>
+            <th>vCPUs</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td>MongoDB Atlas M0</td>
+            <td>Primary DB</td>
+            <td>512mb</td>
+            <td>Shared</td>
+            <td>Shared</td>
+            <td>Free</td>
+        </tr>
+        <tr>
+            <td>MongoDB Atlas M10</td>
+            <td>Primary DB</td>
+            <td>10GB</td>
+            <td>2GB</td>
+            <td>2 vCPUs</td>
+            <td>₹6.65/hr</td>
+        </tr>
+        <tr>
+            <td>MongoDB Atlas M20</td>
+            <td>Primary DB</td>
+            <td>20GB</td>
+            <td>4GB</td>
+            <td>2 vCPUs</td>
+            <td>₹16.60/hr</td>
+        </tr>
+        <tr>
+            <td>MongoDB Atlas M30</td>
+            <td>Primary DB</td>
+            <td>40GB</td>
+            <td>8GB</td>
+            <td>2 vCPUs</td>
+            <td>₹44.82/hr</td>
+        </tr>
+        <tr>
+            <td>MongoDB Atlas M40</td>
+            <td>Primary DB</td>
+            <td>80GB</td>
+            <td>16GB</td>
+            <td>4 vCPUs</td>
+            <td>₹86.32/hr</td>
+        </tr>
+        <tr>
+            <td>MongoDB Atlas M50</td>
+            <td>Primary DB</td>
+            <td>160GB</td>
+            <td>32GB</td>
+            <td>8 vCPUs</td>
+            <td>₹166/hr</td>
+        </tr>
+        <tr>
+            <td>MongoDB Atlas M60</td>
+            <td>Primary DB</td>
+            <td>320GB</td>
+            <td>64GB</td>
+            <td>16 vCPUs</td>
+            <td>₹327.85/hr</td>
+        </tr>
+        <tr>
+            <td>MongoDB Atlas M80</td>
+            <td>Primary DB</td>
+            <td>750GB</td>
+            <td>128GB</td>
+            <td>32 vCPUs</td>
+            <td>₹605.90/hr</td>
+        </tr>
+        <tr>
+            <td>MongoDB Atlas M140</td>
+            <td>Primary DB</td>
+            <td>1000GB</td>
+            <td>192GB</td>
+            <td>48 vCPUs</td>
+            <td>₹912.17/hr</td>
+        </tr>
+        <tr>
+            <td>MongoDB Atlas M200</td>
+            <td>Primary DB</td>
+            <td>1500GB</td>
+            <td>256GB</td>
+            <td>64 vCPUs</td>
+            <td>₹1,210.97/hr</td>
+        </tr>
+        <tr>
+            <td>MongoDB Atlas M300</td>
+            <td>Primary DB</td>
+            <td>2000GB</td>
+            <td>384GB</td>
+            <td>96 vCPUs</td>
+            <td>₹1,813.55/hr</td>
+        </tr>
+        <tr>
+            <td>MongoDB Atlas M400</td>
+            <td>Primary DB</td>
+            <td>3000GB</td>
+            <td>488GB</td>
+            <td>64 vCPUs</td>
+            <td>₹1,859.20/hr</td>
+        </tr>
+        <tr>
+            <td>MongoDB Atlas M700</td>
+            <td>Primary DB</td>
+            <td>4000GB</td>
+            <td>768GB</td>
+            <td>96 vCPUs</td>
+            <td>₹2,760.58/hr</td>
+        </tr>
+    </table>
 
         <h2 class="section-header">2.3 Cache-Maintenance</h2>
 <div class="service-note">
