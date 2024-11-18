@@ -909,6 +909,73 @@ Cluster Selection Criteria:
         </div>
         
         <div class="calculation-note">
+            <h3>Total Infrastructure Costs with Regional Pricing (Mumbai) </h3>
+            <div class="service-note">Monthly costs based on 60% active user ratio and optimized single-instance VDI with time-sharing</div>
+            <table>
+                <tr>
+                    <th>Component</th>
+                    <th>1000 Users</th>
+                    <th>5000 Users</th>
+                    <th>10000 Users</th>
+                </tr>
+                <tr>
+                    <td>AWS EC2 (Mumbai)</td>
+                    <td>₹8,073</td>
+                    <td>₹16,146</td>
+                    <td>₹32,292</td>
+                </tr>
+                <tr>
+                    <td>MongoDB Atlas</td>
+                    <td>₹14,200</td>
+                    <td>₹28,400</td>
+                    <td>₹42,600</td>
+                </tr>
+                <tr>
+                    <td>Storage & Database</td>
+                    <td>₹17,095</td>
+                    <td>₹59,475</td>
+                    <td>₹94,790</td>
+                </tr>
+                <tr>
+                    <td>Auth & Communication</td>
+                    <td>₹5,640</td>
+                    <td>₹28,200</td>
+                    <td>₹56,400</td>
+                </tr>
+                <tr>
+                    <td>Video Streaming</td>
+                    <td>₹0</td>
+                    <td>₹24,900</td>
+                    <td>₹41,500</td>
+                </tr>
+                <tr>
+                    <td>VDI (Single DS13-2 v2)</td>
+                    <td>₹24,506</td>
+                    <td>₹24,506</td>
+                    <td>₹24,506</td>
+                </tr>
+                <tr>
+                    <td><strong>Total Monthly Fixed Costs</strong></td>
+                    <td class="cost-emphasis">₹45,008</td>
+                    <td class="cost-emphasis">₹157,121</td>
+                    <td class="cost-emphasis">₹267,582</td>
+                </tr>
+                <tr>
+                    <td><strong>Cost per Active User</strong></td>
+                    <td class="cost-emphasis">₹75.01</td>
+                    <td class="cost-emphasis">₹52.37</td>
+                    <td class="cost-emphasis">₹44.60</td>
+                </tr>
+                <tr>
+                    <td><strong>VDI Cost per User</strong></td>
+                    <td class="cost-emphasis">₹22.96</td>
+                    <td class="cost-emphasis">₹4.59</td>
+                    <td class="cost-emphasis">₹2.30</td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="calculation-note">
             <h3>Variable Costs per Transaction</h3>
             <table>
                 <tr>
@@ -936,6 +1003,74 @@ Cluster Selection Criteria:
                     <td>For international payments</td>
                 </tr>
             </table>
+        </div>
+
+        <div class="calculation-note">
+            <h3>Infrastructure Cost Analysis with VPC and 20 Instances (1000 Users)</h3>
+            <div class="service-note">Cost breakdown with 20 instances deployment with VPC components</div>
+            <table>
+                <tr>
+                    <th>Component</th>
+                    <th>Monthly Cost</th>
+                    <th>Details</th>
+                </tr>
+                <tr>
+                    <td>Base Infrastructure</td>
+                    <td>₹69,514</td>
+                    <td>
+                        <div class="tier-detail">- AWS EC2 (Mumbai): ₹8,073</div>
+                        <div class="tier-detail">- MongoDB Atlas: ₹14,200</div>
+                        <div class="tier-detail">- Storage & Database: ₹17,095</div>
+                        <div class="tier-detail">- Auth & Communication: ₹5,640</div>
+                        <div class="tier-detail">- Video Streaming: ₹0</div>
+                        <div class="tier-detail">- VDI (Single DS13-2 v2): ₹24,506</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Additional EC2 Instances (20×)</td>
+                    <td>₹53,860</td>
+                    <td>₹2,693 per instance × 20</td>
+                </tr>
+                <tr>
+                    <td>VPC Components</td>
+                    <td>₹19,090</td>
+                    <td>
+                        <div class="tier-detail">- NAT Gateway: ₹4,150</div>
+                        <div class="tier-detail">- VPC Endpoints: ₹2,490</div>
+                        <div class="tier-detail">- Data Transfer: ₹8,300</div>
+                        <div class="tier-detail">- Load Balancer: ₹3,320</div>
+                        <div class="tier-detail">- VPC Flow Logs: ₹830</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Total Monthly Cost</strong></td>
+                    <td class="cost-emphasis">₹142,464</td>
+                    <td>Complete infrastructure with VPC</td>
+                </tr>
+                <tr>
+                    <td><strong>Cost per User (1000 users)</strong></td>
+                    <td class="cost-emphasis">₹142.46</td>
+                    <td>Monthly cost per user</td>
+                </tr>
+            </table>
+
+            <div class="aws-note">
+                <h4>Infrastructure Benefits:</h4>
+                <ul>
+                    <li>Enhanced Reliability
+                        <div class="tier-detail">- Redundant infrastructure</div>
+                        <div class="tier-detail">- Improved fault tolerance</div>
+                    </li>
+                    <li>Better Scalability
+                        <div class="tier-detail">- Distributed load handling</div>
+                        <div class="tier-detail">- Flexible resource allocation</div>
+                    </li>
+                    <li>Improved Security
+                        <div class="tier-detail">- Isolated network segments</div>
+                        <div class="tier-detail">- Enhanced access controls</div>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </body>
