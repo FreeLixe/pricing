@@ -91,22 +91,80 @@
     <div class="card">
         <h2 class="section-header">Virtual Desktop Infrastructure (VDI) Analysis - Single Instance Approach</h2>
 
-<div class="calculation-note">
-    <h3>Single Instance Strategy:</h3>
-    <ul>
-        <li><strong>Instance Type:</strong> DS13-2 v2
-            <div class="tier-detail">- 2 vCPUs</div>
-            <div class="tier-detail">- 56 GB RAM</div>
-            <div class="tier-detail">- 112 GB Temporary storage</div>
-        </li>
-        <li><strong>Time Slot Division:</strong>
-            <div class="tier-detail">- Morning Shift: 9 AM - 2 PM</div>
-            <div class="tier-detail">- Evening Shift: 2 PM - 7 PM</div>
-            <div class="tier-detail">- Night Shift: 7 PM - 12 AM (optional)</div>
-        </li>
-    </ul>
-</div>
 
+<div class="calculation-note">
+    <h3>VDI Deployment Options for Cost-Effective Maya Software Usage</h3>
+    
+    <div class="service-note">
+        <strong>Important Note for Maya Software Users:</strong> We offer two flexible approaches to balance performance needs with cost efficiency:
+    </div>
+
+    <div class="tier-detail" style="margin-top: 16px;">
+        <h4>Option 1: Cost-Optimized Time-Sharing (Single Instance)</h4>
+        <ul>
+            <li>Monthly Cost: ₹24,506 (Only ₹22.96 per user)</li>
+            <li>Ideal for organizations prioritizing cost efficiency</li>
+            <li>Pre-scheduled time slots ensure dedicated access:
+                <div class="tier-detail">- Morning: 9 AM - 2 PM (400 users)</div>
+                <div class="tier-detail">- Evening: 2 PM - 7 PM (400 users)</div>
+                <div class="tier-detail">- Night: 7 PM - 12 AM (200 users)</div>
+            </li>
+            <li>Each user gets 5 hours of dedicated, high-performance access</li>
+            <li>Advanced booking system for time slot management</li>
+            <li>Emergency access queue available for urgent work</li>
+        </ul>
+    </div>
+
+    <div class="tier-detail" style="margin-top: 16px;">
+        <h4>Option 2: High-Performance Multi-Instance Setup</h4>
+        <ul>
+            <li>20 DS13-2 v2 instances for optimal Maya performance</li>
+            <li>Unrestricted access times</li>
+            <li>Dedicated resources for complex 3D modeling</li>
+            <li>Ideal for intensive Maya workloads</li>
+            <li>Full GPU support for rendering</li>
+            <li>Total Monthly Cost: ₹490,120 (₹490.12 per user)</li>
+        </ul>
+    </div>
+
+    <div class="aws-note" style="margin-top: 16px;">
+        <h4>Why High Specification  VDI Solution is Perfect for Maya:</h4>
+        <ul>
+            <li>DS13-2 v2 Specifications:
+                <div class="tier-detail">- 2 powerful vCPUs optimized for 3D workflows</div>
+                <div class="tier-detail">- 56 GB RAM for complex model handling</div>
+                <div class="tier-detail">- 112 GB SSD storage for fast file access</div>
+            </li>
+            <li>Cost Benefits:
+                <div class="tier-detail">- Save 70-80% compared to traditional workstations</div>
+                <div class="tier-detail">- No upfront hardware investments</div>
+                <div class="tier-detail">- Pay only for what you use</div>
+            </li>
+            <li>Flexibility:
+                <div class="tier-detail">- Start with time-sharing, scale as needed</div>
+                <div class="tier-detail">- Mix both approaches for different user groups</div>
+                <div class="tier-detail">- Adjust resources based on project demands</div>
+            </li>
+        </ul>
+    </div>
+</div>
+<h3 class="text-xl font-semibold mb-4"> Below table is for  Single Instance Capacity</h3>
+<div class="space-y-3">
+    <div class="bg-white p-4 rounded-lg shadow-sm">
+        <h4 class="font-medium text-blue-800">Instance Capacity:</h4>
+        <p class="mt-2"><strong>7-8 concurrent users per instance</strong></p>
+    </div>
+    
+    <div class="bg-yellow-50 p-4 rounded-lg">
+        <p class="font-medium">Key Points:</p>
+        <ul class="list-disc ml-6 mt-2 space-y-1">
+            <li>Each DS13-2 v2 instance supports maximum 7-8 users at a time</li>
+            <li>Designed for optimal performance and resource allocation</li>
+            <li>Cost remains ₹24,506/month per instance</li>
+        </ul>
+    </div>
+</div>
+</div>
 <table>
     <tr>
         <th>Scale</th>
@@ -1005,7 +1063,7 @@ Cluster Selection Criteria:
             </table>
         </div>
 
-        <div class="calculation-note">
+        <!-- <div class="calculation-note">
             <h3>Infrastructure Cost Analysis with VPC and 20 Instances (1000 Users)</h3>
             <div class="service-note">Cost breakdown with 20 instances deployment with VPC components</div>
             <table>
@@ -1071,7 +1129,7 @@ Cluster Selection Criteria:
                     </li>
                 </ul>
             </div>
-        </div>
+        </div> -->
     </div>
 </body>
 </html>
